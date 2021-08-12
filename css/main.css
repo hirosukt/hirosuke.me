@@ -61,6 +61,11 @@ main .container {
     margin: 16px 32px;
 }
 
+a {
+    color: #ddd;
+    text-decoration: none;
+}
+
 h1 {
     padding-top: 4px;
     font-size: 32px;
