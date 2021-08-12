@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+main::-webkit-scrollbar {
+    width: 3px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    transition: .25s;
+    border-radius: 4px !important;
+}
+
+main::-webkit-scrollbar-track {
+    background: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: "Karla", sans-serif;
+    color: #ddd;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+
+:root {
+    --header-height: 64px;
+    --scroll-bar-padding: 3.8px;
+}
+
+main {
+    margin: calc(var(--header-height) + var(--scroll-bar-padding)) var(--scroll-bar-padding) var(--scroll-bar-padding);
+    width: calc(100% - var(--scroll-bar-padding) * 2);
+    height: calc(100% - var(--header-height) - var(--scroll-bar-padding) * 2);
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Safari hack */
+_::-webkit-full-page-media,
+_:future,
+:root main {
+    margin: calc(var(--header-height)) 0 0;
+    width: 100%;
+    height: calc(100% - var(--header-height) - 1px);
+}
+/* これ素晴らしい賢い感動した tenzyu */
+
+/* Safari hack の副作用を打ち消すためのもの*/
+_::-webkit-full-page-media,
+_:future,
+:root #nav.active{
+    top: 64px;
+}
+
+main .container {
+    margin: 16px 32px;
+}
+
+h1 {
+    padding-top: 4px;
+    font-size: 32px;
+}
+
+h2 {
+    padding-top: 6px;
+    font-size: 19px;
+}
+
+p {
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.page-tab {
+    display: inline-block;
+    height: 100%;
+    padding: 36px 72px 36px 36px;
+    visibility: hidden;
+    z-index: 1;
+    box-sizing: border-box;
+    border-right: #1e1e1e solid 1px;
+}
+
+.tab-item {
+    padding: 6px 0;
+    color: #999;
+    user-select: none;
+}
+
+.tab-item:hover {
+    color: #ddd;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+}
+
+ul.hobbies {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hobbies-item {
+    padding: 4px 8px 4px 8px;
+    margin-right: 8px;
+    background-color: #191919;
+    color: #ddd;
+    box-shadow: 0px 0px 0px 1px#ddd3;
+
+    margin-block-start: 0;
+    margin-block-end: 8px;
+}
+
+/* */
+
