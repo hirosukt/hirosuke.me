@@ -66,22 +66,24 @@
 
 #nav {
     z-index: 50;
-    top: -300px;
+    opacity: 0;
     position: absolute;
     transition: all 0.4s ease;
     min-width: 100%;
-    height: 0%;
+    height: 100%;
+    top:64px;
     backdrop-filter: blur(12px);
     background-color: rgba(0,0,0, 0.9);
+    visibility: hidden;
 }
 
 #nav.active {
     z-index: 50;
-
+    opacity: 1;
     display: flex;
     position:absolute;
     top:64px; /* headerの縦幅 */
-    height: 100%;
+    visibility: visible;
 }
 
 #nav ul{
