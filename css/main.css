@@ -19,7 +19,7 @@ main::-webkit-scrollbar-track {
 }
 
 body {
-    background-color: #333;
+    background-color: #111;
     font-family: "Karla", sans-serif;
     color: #ddd;
     -webkit-font-smoothing: antialiased;
@@ -85,6 +85,11 @@ body {
     height: 100%;
 }
 
+footer {
+    position: absolute;
+    bottom: 16px;
+}
+
 .page-tab {
     display: inline-block;
     height: 100%;
@@ -109,18 +114,18 @@ body {
     position: absolute;
 }
 
-.hobbies {
+.hobbies, .links, .landscape-photos, .minecraft-photos {
     display: flex;
     flex-wrap: wrap;
     max-width: 320px;
 }
 
-ul.hobbies {
+ul.hobbies, ul.links {
     list-style: none;
     padding-left: 0;
 }
 
-.hobbies-item {
+.hobbies-item, .links-item {
     padding: 4px 8px 4px 8px;
     margin-right: 8px;
     background-color: #191919;
@@ -129,6 +134,15 @@ ul.hobbies {
 
     margin-block-start: 0;
     margin-block-end: 8px;
+}
+
+.photos {
+    flex-direction: column;
+    display: flex;
+}
+
+.photos-item {
+    padding-bottom: 24px;
 }
 
 /* */
