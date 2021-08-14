@@ -139,14 +139,10 @@ ul.hobbies, ul.links {
 .photos {
     flex-direction: column;
     display: flex;
-    display: -webkit-box;
-    justify-content: stretch;
-    align-items: center;
 }
 
 .photos-item {
     padding-bottom: 24px;
-    width: 100%;
     max-width: 100%;
 }
 

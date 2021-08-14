@@ -35,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    transition: all 0.4s var(--easing-function);
+    transition: all 0.3s var(--easing-function);
 }
 
 .nav_button span {
@@ -45,7 +45,7 @@
     background-color: #fff;
     border-radius: 4px;
     display: inline-block;
-    transition: all 0.4s var(--easing-function);
+    transition: all 0.3s var(--easing-function);
 }
 
 .nav_button.active {
