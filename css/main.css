@@ -146,5 +146,9 @@ ul.hobbies, ul.links {
     padding-bottom: 24px;
 }
 
+img.photos-item {
+    width: 100%;
+}
+
 /* */
 
