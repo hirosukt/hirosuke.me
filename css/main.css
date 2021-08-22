@@ -135,6 +135,7 @@ ul.hobbies, ul.links {
 
     margin-block-start: 0;
     margin-block-end: 8px;
+    border-radius: 2px;
 }
 
 .photos {
@@ -145,6 +146,32 @@ ul.hobbies, ul.links {
 .photos-item {
     padding-bottom: 24px;
     max-width: 100%;
+}
+
+.projects-item {
+    padding: 6px 12px 4px 12px;
+    margin-top: 12px;
+    background-color: #191919;
+    color: #ddd;
+    box-shadow: 0px 0px 0px 1px#ddd3;
+    border-radius: 6px;
+}
+
+.projects-title {
+    margin-block-start: 0;
+    margin-block-end: 4px;
+    padding-bottom: 4px;
+}
+
+.projects-text {
+    padding-top: 4px;
+    margin-block-start: 0;
+    margin-block-end: 6px;
+}
+
+.openinnew {
+    padding-bottom: 6px;
+    margin-left: auto;
 }
 
 /* */
