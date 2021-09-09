@@ -142,14 +142,19 @@ ul.hobbies {
 .link-icon {
     fill: #ddd;
     margin-right: 36px;
-    text-align: center;
 }
 
 .links {
+    display: flex;
     align-items: center;
-    margin-top: 100% !important;
+    margin-top: auto;
     text-align: center !important;
     padding-inline-start: 0;
+    height: 60%;
+    flex-direction: row;
+    -webkit-box-align: center;
+    justify-content: space-evenly;
+    padding: 0 36px 0 36px;
 }
 
 .photos {
