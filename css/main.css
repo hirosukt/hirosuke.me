@@ -144,15 +144,22 @@ ul.hobbies {
     padding-inline-start: 0;
 }
 
-.links {
+.nav-contents {
     display: flex;
-    align-items: center;
-    margin-top: 50%;
-    text-align: center !important;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.links {
+    margin-top: auto;
+    display: flex;
     flex-direction: row;
+    align-items: center;
     -webkit-box-align: center;
     justify-content: space-evenly;
     padding: 0 10% 0 10%;
+    margin-bottom: 48px;
 }
 
 .nav-item {
