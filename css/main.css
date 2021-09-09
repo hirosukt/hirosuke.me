@@ -147,7 +147,7 @@ ul.hobbies {
 
 .links {
     align-items: center;
-    padding-top: 100%;
+    margin-top: 100% !important;
     text-align: center !important;
     padding-inline-start: 0;
 }
