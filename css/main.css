@@ -25,6 +25,7 @@ body {
     color: #ddd;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
+    letter-spacing: 1px;
 }
 
 :root {
