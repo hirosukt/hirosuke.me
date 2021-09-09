@@ -25,7 +25,7 @@ body {
     color: #ddd;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
-    letter-spacing: 1px;
+    letter-spacing: normal;
 }
 
 :root {
@@ -116,13 +116,13 @@ footer {
     position: absolute;
 }
 
-.hobbies, .links, .landscape-photos, .minecraft-photos {
+.hobbies, .landscape-photos, .minecraft-photos {
     display: flex;
     flex-wrap: wrap;
     max-width: 320px;
 }
 
-ul.hobbies, ul.links {
+ul.hobbies {
     list-style: none;
     padding-left: 0;
 }
@@ -137,6 +137,19 @@ ul.hobbies, ul.links {
     margin-block-start: 0;
     margin-block-end: 8px;
     border-radius: 2px;
+}
+
+.link-icon {
+    fill: #ddd;
+    margin-right: 36px;
+    text-align: center;
+}
+
+.links {
+    align-items: center;
+    padding-top: 100%;
+    text-align: center !important;
+    padding-inline-start: 0;
 }
 
 .photos {
@@ -170,9 +183,8 @@ ul.hobbies, ul.links {
     margin-block-end: 6px;
 }
 
-.openinnew {
-    padding-bottom: 6px;
-    margin-left: auto;
+.pin {
+    width: 100%;
 }
 
 /* */
