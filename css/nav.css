@@ -92,6 +92,7 @@
     text-align: left;
     width: 100%;
     list-style: none;
+    padding-inline-start: 0;
 }
 
 #nav ul li{
@@ -101,5 +102,5 @@
     user-select: none;
     font-size: 16px;
     text-align: left;
-    padding: 16px 0;
+    padding: 16px 0 16px 40px;
 }
