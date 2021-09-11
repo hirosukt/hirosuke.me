@@ -9,6 +9,22 @@
     
     background-color: rgba(0,0,0, 0.9);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+@supports not (backdrop-filter: blur()) {
+  .header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 64px;
+
+    background-color: rgba(0,0,0, 0.9);
+    filter: blur(12px);
+  }
 }
 
 .header h1 {

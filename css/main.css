@@ -127,7 +127,7 @@ ul.hobbies {
     padding-left: 0;
 }
 
-.hobbies-item, .links-item {
+.hobbies-item {
     padding: 4px 8px 4px 8px;
     margin-right: 8px;
     background-color: #191919;
@@ -178,11 +178,7 @@ ul.hobbies {
 
 .projects-item {
     padding: 6px 12px 4px 12px;
-    margin-top: 12px;
-    background-color: #191919;
-    color: #ddd;
-    box-shadow: 0px 0px 0px 1px#ddd3;
-    border-radius: 4px;
+    margin-top: 18px;
 }
 
 .projects-title {
