@@ -140,7 +140,7 @@ ul.hobbies {
 }
 
 .link-icon {
-    fill: #ddd;
+    filter: invert(0.86);
     padding-inline-start: 0;
 }
 
