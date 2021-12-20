@@ -1,3 +1,3 @@
 # hirosuke.art
 
-https://hirosuke.art/
+https://hirosuke.works/
