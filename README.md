@@ -1,3 +1,3 @@
-# hirosuke.art
+# website
 
 https://hirosuke.works/
