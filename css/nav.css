@@ -7,7 +7,7 @@
     left: 0;
     height: 64px;
     
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0,0,0, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -27,81 +27,4 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.nav_button {
-    --easing-function: cubic-bezier(0.4, 0.3, 0.2, 1);
-    width: 30px;
-    height: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    transition: all 0.3s var(--easing-function);
-}
-
-.nav_button span {
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 4px;
-    display: inline-block;
-    transition: all 0.3s var(--easing-function);
-}
-
-.nav_button.active {
-    transform: rotate(360deg);
-}
-
-.nav_button.active span:nth-of-type(1) {
-    transform: translateY(8px) rotate(-45deg);
-}
-
-.nav_button.active span:nth-of-type(2) {
-    transform: translateY(0) rotate(45deg);
-}
-
-.nav_button.active span:nth-of-type(3) {
-    opacity: 0;
-}
-
-
-#nav {
-    z-index: 50;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.4s ease;
-    min-width: 100%;
-    height: calc(100% - 64px);
-    top:64px;
-    backdrop-filter: blur(12px);
-    background-color: rgba(0,0,0, 0.9);
-    visibility: hidden;
-}
-
-#nav.active {
-    z-index: 50;
-    opacity: 1;
-    display: flex;
-    position:absolute;
-    top:64px; /* headerの縦幅 */
-    visibility: visible;
-}
-
-#nav ul{
-    margin: 0;
-    text-align: left;
-    width: 100%;
-    list-style: none;
-    padding-inline-start: 0;
-}
-
-#nav ul li{
-    color: #ddd;
-    width: 100%;
-    cursor:pointer;
-    user-select: none;
-    font-size: 16px;
-    text-align: left;
-    padding: 16px 0 16px 40px;
 }

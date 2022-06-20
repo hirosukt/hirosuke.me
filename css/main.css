@@ -88,7 +88,34 @@ body {
 
 footer {
     position: absolute;
-    bottom: 16px;
+    bottom: 0%;
+    backdrop-filter: blur(12px);
+    background-color: rgba(0,0,0, 0.75);
+    height: 48px;
+    width: 100%;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 6px;
+    margin: 10px 32px;
+}
+
+.links {
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: space-evenly;
+    padding: 0 10% 0 10%;
+    top: 25%;
+}
+
+.link-icon {
+    filter: invert(0.86);
+    padding-inline-start: 0;
 }
 
 .page-tab {
@@ -129,18 +156,12 @@ ul.hobbies {
 .hobbies-item {
     padding: 4px 8px 4px 8px;
     margin-right: 8px;
-    background-color: #191919;
+    background-color: #212121;
     color: #ddd;
     box-shadow: 0px 0px 0px 1px#ddd3;
-
     margin-block-start: 0;
     margin-block-end: 8px;
     border-radius: 2px;
-}
-
-.link-icon {
-    filter: invert(0.86);
-    padding-inline-start: 0;
 }
 
 .nav-contents {
@@ -150,17 +171,6 @@ ul.hobbies {
     flex-direction: column;
 }
 
-.links {
-    margin-top: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    -webkit-box-align: center;
-    justify-content: space-evenly;
-    padding: 0 10% 0 10%;
-    margin-bottom: 48px;
-}
-
 .nav-item {
     padding-left: 40px;
 }
@@ -168,11 +178,13 @@ ul.hobbies {
 .photos {
     flex-direction: column;
     display: flex;
+    max-width: 720px;
 }
 
 .photos-item {
     padding-bottom: 24px;
     max-width: 100%;
+    width: 260px;
 }
 
 .projects-item {
