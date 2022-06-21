@@ -102,20 +102,21 @@ footer {
 }
 
 .links {
-    position: relative;
+    position: absolute;
     margin-top: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     -webkit-box-align: center;
     justify-content: space-evenly;
-    padding: 0 10% 0 10%;
-    top: 25%;
+    right: 48px;
+    bottom: 8px;
 }
 
 .link-icon {
-    filter: invert(0.86);
+    filter: invert(0.8);
     padding-inline-start: 0;
+    padding-left: 36px;
 }
 
 .page-tab {
